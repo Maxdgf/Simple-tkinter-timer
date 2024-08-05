@@ -5,7 +5,7 @@ class TimerApp:
     def __init__(self, master):
         self.master = master
         master.title("Easy Timer")
-        master.geometry("500x500")
+        master.geometry("800x800")
 
         self.label = tk.Label(master, text="Easy Timer", font=("Arial", 30))
         self.label.pack()
