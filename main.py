@@ -10,24 +10,9 @@ class TimerApp:
         self.label = tk.Label(master, text="Easy Timer", font=("Arial", 30))
         self.label.pack()
         
-        #self.description_label = tk.Label(master, text="input minutes here:")
-        #self.description_label.pack(pady=30)
-        
-       # self.time_scale = tk.Scale(master, orient="horizontal", from_=0, to=1000)
-        #self.time_scale.pack()
-        
-        #self.time_input = tk.Entry(master, width=30)
-        #self.time_input.pack(pady=20)
-        
-        #self.time_data = self.time_input.get()
-        #self.time_int = int(self.time_data)
-        #self.time_left = self.time_int()
-        self.time_left = 60
+        self.time_left = 60 #Default time in seconds
         self.time_function = self.format_time(self.time_left)
         self.running = False
-        
-        #self.apply_button = tk.Button(master, width=30, bg="yellow", text="apply")
-        #self.apply_button.pack()
 
         self.time_label = tk.Label(master, text=self.time_function, font=("Impact", 50))
         self.time_label.pack(pady=200)
